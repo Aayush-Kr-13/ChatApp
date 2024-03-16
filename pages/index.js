@@ -1,9 +1,10 @@
-import React from "react"
+import React, {useEffect, useState, useContext} from "react"
+
+import { ChatAppContext } from "@/Context/ChatAppContext"
 
 const ChatApp = () => {
-    return (
-        <div>ChatApp</div>
-    )
+    const { title } = useContext(ChatAppContext);
+    return <div>{title}</div>;
 }
 
-export default ChatApp
+export default ChatApp;
